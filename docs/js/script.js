@@ -4,7 +4,7 @@ const REPO = 'Ai-Slop';
 const projectsContainer = document.getElementById('projects-container');
 
 async function fetchDir(path) {
-    const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`);
+    const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}?ref=main`);
     if (!response.ok) {
         throw new Error(`Failed to fetch directory ${path}: ${response.statusText}`);
     }
@@ -12,7 +12,7 @@ async function fetchDir(path) {
 }
 
 async function fetchFile(path) {
-    const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}`);
+    const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${path}?ref=main`);
     if (!response.ok) {
         throw new Error(`Failed to fetch file ${path}: ${response.statusText}`);
     }
