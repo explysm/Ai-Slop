@@ -24,13 +24,15 @@ Feel free to browse the code, run the projects (if they work!), and see what the
 
 ## Project Structure
 
-The projects in this repository are organized by category. Each project has its own directory & within a category folder.
+The projects in this repository are organized by category under the `categories` directory. Each project has its own directory within a category folder.
 
 ```
 /
-├── <Category>/
-│   └── <Project>/
-│       ├── Instructions.md
-│       └── ...
+├── categories/
+│   ├── <Category>/
+│   │   └── <Project>/
+│   │       ├── ...
+│   │       └── ...
+│   └── ...
 └── ...
 ```
