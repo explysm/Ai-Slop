@@ -32,7 +32,7 @@ For example:
 >
 > Same with the desc
 >
-> The URL should be "https://github.com/explysm/ai-slop/categories/<the category in the #Needed header>/<the project name>"
+> The URL should be "https://github.com/explysm/ai-slop/tree/main/categories/<the category in the #Needed header>/<the project name>"
 
 ```
 {
