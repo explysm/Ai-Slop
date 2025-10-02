@@ -1,21 +1,129 @@
-/* Custom Styles */
+/* AI Slop - Modern Sidebar Navigation Redesign */
 
-:root {
-  --spacing: 1rem;
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
 
-body > main {
-    padding: var(--spacing);
+:root {
+  --primary-color: #2c3e50; /* A dark, professional blue */
+  --secondary-color: #3498db; /* A lighter blue for accents */
+  --background-color: #f4f6f9;
+  --sidebar-bg-color: #ffffff;
+  --text-color: #333;
+  --sidebar-text-color: #ffffff;
+  --border-color: #e0e0e0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--sidebar-bg-color);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--sidebar-text-color);
+  text-align: center;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#categories-nav {
+    padding: 1.5rem;
+}
+
+#categories-nav h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #95a5a6;
+}
+
+#categories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#categories-list li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#categories-list li:hover,
+#categories-list li.active {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.content header {
+    margin-bottom: 2rem;
+}
+
+.content header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
 #projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--spacing);
+  gap: 2rem;
 }
 
 article {
-  border: 1px solid var(--secondary);
-  padding: var(--spacing);
-  border-radius: var(--border-radius);
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+article h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+}
+
+article p {
+    margin: 0 0 1rem 0;
+    color: #666;
+}
+
+article a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
 }
