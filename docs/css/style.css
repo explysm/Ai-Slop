@@ -1,0 +1,21 @@
+/* Custom Styles */
+
+:root {
+  --spacing: 1rem;
+}
+
+body > main {
+    padding: var(--spacing);
+}
+
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing);
+}
+
+article {
+  border: 1px solid var(--secondary);
+  padding: var(--spacing);
+  border-radius: var(--border-radius);
+}
