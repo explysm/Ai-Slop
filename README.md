@@ -15,7 +15,7 @@ This project was started as a fun way to explore the world of AI-driven developm
 To get a local copy up and running, simply clone the repository:
 
 ```sh
-git clone https://github.com/your_username/ai-slop.git
+git clone https://github.com/explysm/ai-slop.git
 ```
 
 ## Usage
@@ -26,12 +26,14 @@ Feel free to browse the code, run the projects (if they work!), and see what the
 
 The projects in this repository are organized by category under the `categories` directory. Each project has its own directory within a category folder.
 
+A template instructions.md can be found [here](misc/instructions.md.template.md)
+
 ```
 /
 ├── categories/
 │   ├── <Category>/
 │   │   └── <Project>/
-│   │       ├── ...
+│   │       ├── instructions.md
 │   │       └── ...
 │   └── ...
 └── ...
