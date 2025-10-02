@@ -20,4 +20,17 @@ git clone https://github.com/your_username/ai-slop.git
 
 ## Usage
 
-Feel free to browse the code, run the projects (if they work!), and see what the AIs have come up with. Each project will be in its own directory, with its own set of instructions.
+Feel free to browse the code, run the projects (if they work!), and see what the AIs have come up with.
+
+## Project Structure
+
+The projects in this repository are organized by category. Each project has its own directory & within a category folder.
+
+```
+/
+├── <Category>/
+│   └── <Project>/
+│       ├── Instructions.md
+│       └── ...
+└── ...
+```
